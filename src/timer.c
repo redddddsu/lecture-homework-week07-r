@@ -36,7 +36,7 @@ void timer_init() {
 void timer_handler(int n) {
   TIMER* t = &timer[n];
   t->tick++;
-  if (t->tick == 60) {
+  if (t->tick == 12) {
     t->tick = 0;
     t->ss++;
     if (t->ss == 60) {
